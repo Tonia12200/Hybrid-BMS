@@ -1,0 +1,115 @@
+:root {
+    --red:red;
+    --white:white;
+    --blue: blue;
+    --grey: rgb(65, 64, 64);
+  }
+
+#loginput{
+    border: none;
+    background-color: rgb(247, 247, 247);
+    border-radius: 4px;
+    box-shadow: 2px 2px rgb(225, 224, 224) ;
+   
+}
+input{
+     outline: none;
+}
+nav{
+    background-color: var(--red);
+    height: 50px;
+}
+#logo{
+    user-select: none;
+    text-decoration: none;
+    pointer-events: none;
+}
+#offcanvasScrolling{
+    width: 220px;
+    background-color: var(--grey);
+}
+#closebtn{
+    color: var(--white);
+}
+.list-group{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+}
+.page{
+    
+    margin-top: 50px;
+}
+#bloodicon{
+    color: var(--red);
+}
+.lowericon{
+    font-size: 25px;
+    color: var(--blue);
+}
+
+
+    @keyframes blinkColor {
+      0% { color: red; }
+      50% { color: yellow; }
+      100% { color: red; }
+    }
+
+    .blinking-icon {
+      animation: blinkColor 1s infinite;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .fixed-icon {
+      position: fixed;
+      top: 50px;
+      right: 60px;
+      z-index: 1050;
+    }
+
+    .alert-box {
+      width: 230px;
+      position: fixed;
+      top: 80px; font-size: 13px;
+      right: 20px;
+      z-index: 1040;
+      display: none;
+    }
+
+    .slide-in {
+      animation: slideIn 0.5s forwards;
+    }
+
+    .slide-out {
+      animation: slideOut 0.5s forwards;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideOut {
+      0% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+  
+
+/*css for login page*/
+#adlogin{
+    box-shadow: 2px 2px 5px gray;
+    border: none;
+}
+#adheader{
+    border-top-right-radius: 12px;
+}
+.loginbtn{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 5px ; width: 75px;
+    border-radius: 4px; border: none;
+}
+
+
+/*donor registration page*/
